@@ -14,7 +14,7 @@
 
 <body>
 
-  <header class="navbar">
+  <header class="navbar navbar--mobile_fixed">
     <div class="container">
       <div class="navbar__wrapper">
 
@@ -25,7 +25,7 @@
         </div>
         <!-- /.navbar__logo-wrapper -->
 
-        <nav class="navbar-menu">
+        <nav class="navbar-menu navbar-menu--ml-4">
           <ul class="navbar__list">
 
             <li class="navbar__item">
@@ -33,62 +33,69 @@
             </li>
 
             <li class="navbar__item navbar__item-landings">
-              <a href="#" class="navbar__link navbar__landings">Landings</a>
+              <a href="#" data-target="#landings" class="navbar__link navbar-menu__link navbar__landings">Landings</a>
               <div class="arrow navbar__landings-arrow">
-                <a href="#">
+                <a href="#" class="arrow__wrap">
                   <img src="img/header/arrow-down.svg" alt="Icon: arrow-down" class="arrow-down">
                 </a>
               </div>
 
-              <ul class="sub-menu sub-menu__landings">
+              <ul id="landings" class="sub-menu sub-menu__landings">
                 <li class="sub-menu__item">
-                  <a href="#" class="sub-menu__link">Services</a>
+                  <a href="#" data-target="#services" class="sub-menu__link sub-menu__link-services">Services</a>
                   <div class="sub-arrow sub-menu__arrow">
                     <a href="#">
-                      <img src="img/header/arrow-sub-menu.svg" alt="Icon: arrow-sub" class="sub-icon">
+                      <!-- <img src="img/header/arrow-sub-menu.svg" alt="Icon: arrow-sub" class="sub-icon"> -->
+                      <!-- <svg class="sub-icon">
+                        <use xlink:href="img/sprite.svg/arrow-sub-menu"></use>
+                      </svg> -->
+                      <svg class="sub-icon" width="7" height="10" viewBox="0 0 7 10" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.125 5.21484C6.37109 4.96875 6.37109 4.55859 6.125 4.28516L2.40625 0.566406C2.13281 0.320312 1.72266 0.320312 1.47656 0.566406L0.847656 1.19531C0.601562 1.46875 0.601562 1.87891 0.847656 2.125L3.5 4.77734L0.847656 7.40234C0.601562 7.64844 0.601562 8.05859 0.847656 8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703 2.40625 8.93359L6.125 5.21484Z" />
+                      </svg>
                     </a>
                   </div>
 
-                  <ul class="sub-menu sub-menu__services">
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Software Library</a>
+                  <ul id="services" class="sub-sub-menu sub-sub-menu__services">
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Software Library</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Insurance</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Insurance</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Converence</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Converence</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Rental</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Rental</a>
                     </li>
                   </ul>
-                  <!-- /.sub-menu__services -->
+                  <!-- /.sub-sub-menu sub-sub-menu__services -->
                 </li>
 
                 <li class="sub-menu__item">
-                  <a href="#" class="sub-menu__link">Products</a>
+                  <a href="#" data-target="#products" class="sub-menu__link">Products</a>
                   <div class="sub-arrow sub-menu__arrow">
                     <a href="#">
                       <img src="img/header/arrow-sub-menu.svg" alt="Icon: arrow-sub" class="sub-icon">
                     </a>
                   </div>
 
-                  <ul class="sub-menu sub-menu__products">
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Software Library</a>
+                  <ul id="products" class="sub-sub-menu sub-sub-menu__products">
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Software Library</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Insurance</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Insurance</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Converence</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Converence</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Rental</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Rental</a>
                     </li>
                   </ul>
-                  <!-- /.sub-menu sub-menu__products -->
+                  <!-- /.sub-sub-menu sub-sub-menu__products -->
 
                 </li>
               </ul>
@@ -96,226 +103,256 @@
 
             </li>
             <li class="navbar__item navbar__item-pages">
-              <a href="#" class="navbar__link navbar__pages">Pages</a>
+              <a href="#" data-target="#pages" class="navbar__link navbar-menu__link navbar__pages">Pages</a>
               <div class="arrow navbar__pages-arrow">
-                <a href="#">
+                <a href="#" class="arrow__wrap">
                   <img src="img/header/arrow-down.svg" alt="Icon: arrow-down" class="arrow__down">
                 </a>
               </div>
 
-              <ul class="sub-menu sub-menu__pages">
+              <ul id="pages" class="sub-menu sub-menu__pages">
                 <li class="sub-menu__item">
-                  <a href="#" class="sub-menu__link">Company</a>
+                  <a href="#" data-target="#company" class="sub-menu__link sub-menu__link-company">Company</a>
                   <div class="sub-arrow sub-menu__arrow">
                     <a href="#">
-                      <img src="img/header/arrow-sub-menu.svg" alt="Icon: arrow-sub" class="sub-icon">
+                      <!-- <img src="img/header/arrow-sub-menu.svg" alt="Icon: arrow-sub" class="sub-icon"> -->
+                      <svg class="sub-icon" width="7" height="10" viewBox="0 0 7 10" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.125 5.21484C6.37109 4.96875 6.37109 4.55859 6.125 4.28516L2.40625 0.566406C2.13281 0.320312 1.72266 0.320312 1.47656 0.566406L0.847656 1.19531C0.601562 1.46875 0.601562 1.87891 0.847656 2.125L3.5 4.77734L0.847656 7.40234C0.601562 7.64844 0.601562 8.05859 0.847656 8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703 2.40625 8.93359L6.125 5.21484Z" />
+                      </svg>
                     </a>
                   </div>
 
-                  <ul class="sub-menu sub-menu__company">
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Basic</a>
+                  <ul id="company" class="sub-sub-menu sub-sub-menu__company">
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Basic</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Right Cover</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Right Cover</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Left Cover</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Left Cover</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Modal</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Modal</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Modal with Image</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Modal with Image</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Illustration</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Illustration</a>
                     </li>
                   </ul>
                   <!-- /.sub-menu__company -->
                 </li>
 
                 <li class="sub-menu__item">
-                  <a href="#" class="sub-menu__link">Career</a>
+                  <a href="#" data-target="#career" class="sub-menu__link sub-menu__link-career">Career</a>
                   <div class="sub-arrow sub-menu__arrow">
                     <a href="#">
-                      <img src="img/header/arrow-sub-menu.svg" alt="Icon: arrow-sub" class="sub-icon">
+                      <!-- <img src="img/header/arrow-sub-menu.svg" alt="Icon: arrow-sub" class="sub-icon"> -->
+                      <svg class="sub-icon" width="7" height="10" viewBox="0 0 7 10" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.125 5.21484C6.37109 4.96875 6.37109 4.55859 6.125 4.28516L2.40625 0.566406C2.13281 0.320312 1.72266 0.320312 1.47656 0.566406L0.847656 1.19531C0.601562 1.46875 0.601562 1.87891 0.847656 2.125L3.5 4.77734L0.847656 7.40234C0.601562 7.64844 0.601562 8.05859 0.847656 8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703 2.40625 8.93359L6.125 5.21484Z" />
+                      </svg>
                     </a>
                   </div>
 
-                  <ul class="sub-menu sub-menu__career">
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Basic</a>
+                  <ul id="career" class="sub-sub-menu sub-sub-menu__career">
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Basic</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Right Cover</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Right Cover</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Left Cover</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Left Cover</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Modal</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Modal</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Modal with Image</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Modal with Image</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Illustration</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Illustration</a>
                     </li>
                   </ul>
                   <!-- /.sub-menu__career -->
                 </li>
 
                 <li class="sub-menu__item">
-                  <a href="#" class="sub-menu__link">Blog</a>
+                  <a href="#" data-target="#blog" class="sub-menu__link sub-menu__link-blog">Blog</a>
                   <div class="sub-arrow sub-menu__arrow">
                     <a href="#">
-                      <img src="img/header/arrow-sub-menu.svg" alt="Icon: arrow-sub" class="sub-icon">
+                      <!-- <img src="img/header/arrow-sub-menu.svg" alt="Icon: arrow-sub" class="sub-icon"> -->
+                      <svg class="sub-icon" width="7" height="10" viewBox="0 0 7 10" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.125 5.21484C6.37109 4.96875 6.37109 4.55859 6.125 4.28516L2.40625 0.566406C2.13281 0.320312 1.72266 0.320312 1.47656 0.566406L0.847656 1.19531C0.601562 1.46875 0.601562 1.87891 0.847656 2.125L3.5 4.77734L0.847656 7.40234C0.601562 7.64844 0.601562 8.05859 0.847656 8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703 2.40625 8.93359L6.125 5.21484Z" />
+                      </svg>
                     </a>
                   </div>
 
-                  <ul class="sub-menu sub-menu__blog">
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Basic</a>
+                  <ul id="blog" class="sub-sub-menu sub-sub-menu__blog">
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Basic</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Right Cover</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Right Cover</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Left Cover</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Left Cover</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Modal</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Modal</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Modal with Image</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Modal with Image</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Illustration</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Illustration</a>
                     </li>
                   </ul>
                   <!-- /.sub-menu__blog -->
                 </li>
 
                 <li class="sub-menu__item">
-                  <a href="#" class="sub-menu__link">Utility - Sign in</a>
+                  <a href="#" data-target="#signin" class="sub-menu__link sub-menu__link-signin">Utility - Sign in</a>
                   <div class="sub-arrow sub-menu__arrow">
                     <a href="#">
-                      <img src="img/header/arrow-sub-menu.svg" alt="Icon: arrow-sub" class="sub-icon">
+                      <!-- <img src="img/header/arrow-sub-menu.svg" alt="Icon: arrow-sub" class="sub-icon"> -->
+                      <svg class="sub-icon" width="7" height="10" viewBox="0 0 7 10" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.125 5.21484C6.37109 4.96875 6.37109 4.55859 6.125 4.28516L2.40625 0.566406C2.13281 0.320312 1.72266 0.320312 1.47656 0.566406L0.847656 1.19531C0.601562 1.46875 0.601562 1.87891 0.847656 2.125L3.5 4.77734L0.847656 7.40234C0.601562 7.64844 0.601562 8.05859 0.847656 8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703 2.40625 8.93359L6.125 5.21484Z" />
+                      </svg>
                     </a>
                   </div>
 
-                  <ul class="sub-menu sub-menu__signin">
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Basic</a>
+                  <ul id="signin" class="sub-sub-menu sub-sub-menu__signin">
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Basic</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Right Cover</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Right Cover</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Left Cover</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Left Cover</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Modal</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Modal</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Modal with Image</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Modal with Image</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Illustration</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Illustration</a>
                     </li>
                   </ul>
                   <!-- /.sub-menu__signin -->
                 </li>
 
                 <li class="sub-menu__item">
-                  <a href="#" class="sub-menu__link">Utility - Sign up</a>
+                  <a href="#" data-target="#signup" class="sub-menu__link sub-menu__link-signup">Utility - Sign up</a>
                   <div class="sub-arrow sub-menu__arrow">
                     <a href="#">
-                      <img src="img/header/arrow-sub-menu.svg" alt="Icon: arrow-sub" class="sub-icon">
+                      <!-- <img src="img/header/arrow-sub-menu.svg" alt="Icon: arrow-sub" class="sub-icon"> -->
+                      <svg class="sub-icon" width="7" height="10" viewBox="0 0 7 10" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.125 5.21484C6.37109 4.96875 6.37109 4.55859 6.125 4.28516L2.40625 0.566406C2.13281 0.320312 1.72266 0.320312 1.47656 0.566406L0.847656 1.19531C0.601562 1.46875 0.601562 1.87891 0.847656 2.125L3.5 4.77734L0.847656 7.40234C0.601562 7.64844 0.601562 8.05859 0.847656 8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703 2.40625 8.93359L6.125 5.21484Z" />
+                      </svg>
                     </a>
                   </div>
 
-                  <ul class="sub-menu sub-menu__signup">
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Basic</a>
+                  <ul id="signup" class="sub-sub-menu sub-sub-menu__signup">
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Basic</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Right Cover</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Right Cover</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Left Cover</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Left Cover</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Modal</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Modal</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Modal with Image</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Modal with Image</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Illustration</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Illustration</a>
                     </li>
                   </ul>
                   <!-- /.sub-menu__signup -->
                 </li>
 
                 <li class="sub-menu__item">
-                  <a href="#" class="sub-menu__link">Utility - Password Reset</a>
+                  <a href="#" data-target="#passreset" class="sub-menu__link sub-menu__link-passreset">Utility -
+                    Password Reset</a>
                   <div class="sub-arrow sub-menu__arrow">
                     <a href="#">
-                      <img src="img/header/arrow-sub-menu.svg" alt="Icon: arrow-sub" class="sub-icon">
+                      <!-- <img src="img/header/arrow-sub-menu.svg" alt="Icon: arrow-sub" class="sub-icon"> -->
+                      <svg class="sub-icon" width="7" height="10" viewBox="0 0 7 10" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.125 5.21484C6.37109 4.96875 6.37109 4.55859 6.125 4.28516L2.40625 0.566406C2.13281 0.320312 1.72266 0.320312 1.47656 0.566406L0.847656 1.19531C0.601562 1.46875 0.601562 1.87891 0.847656 2.125L3.5 4.77734L0.847656 7.40234C0.601562 7.64844 0.601562 8.05859 0.847656 8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703 2.40625 8.93359L6.125 5.21484Z" />
+                      </svg>
                     </a>
                   </div>
 
-                  <ul class="sub-menu sub-menu__passreset">
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Basic</a>
+                  <ul id="passreset" class="sub-sub-menu sub-sub-menu__passreset">
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Basic</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Right Cover</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Right Cover</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Left Cover</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Left Cover</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Modal</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Modal</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Modal with Image</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Modal with Image</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Illustration</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Illustration</a>
                     </li>
                   </ul>
                   <!-- /.sub-menu__passreset -->
                 </li>
 
                 <li class="sub-menu__item">
-                  <a href="#" class="sub-menu__link">Utility - Error 404</a>
+                  <a href="#" data-target="#notfound" class="sub-menu__link sub-menu__link-notfound">Utility - Error
+                    404</a>
                   <div class="sub-arrow sub-menu__arrow">
                     <a href="#">
-                      <img src="img/header/arrow-sub-menu.svg" alt="Icon: arrow-sub" class="sub-icon">
+                      <!-- <img src="img/header/arrow-sub-menu.svg" alt="Icon: arrow-sub" class="sub-icon"> -->
+                      <svg class="sub-icon" width="7" height="10" viewBox="0 0 7 10" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.125 5.21484C6.37109 4.96875 6.37109 4.55859 6.125 4.28516L2.40625 0.566406C2.13281 0.320312 1.72266 0.320312 1.47656 0.566406L0.847656 1.19531C0.601562 1.46875 0.601562 1.87891 0.847656 2.125L3.5 4.77734L0.847656 7.40234C0.601562 7.64844 0.601562 8.05859 0.847656 8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703 2.40625 8.93359L6.125 5.21484Z" />
+                      </svg>
                     </a>
                   </div>
 
-                  <ul class="sub-menu sub-menu__notfound">
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Basic</a>
+                  <ul id="notfound" class="sub-sub-menu sub-sub-menu__notfound">
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Basic</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Right Cover</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Right Cover</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Left Cover</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Left Cover</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Modal</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Modal</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Modal with Image</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Modal with Image</a>
                     </li>
-                    <li class="sub-menu__item">
-                      <a href="#" class="sub-menu__link">Illustration</a>
+                    <li class="sub-sub-menu__item">
+                      <a href="#" class="sub-sub-menu__link">Illustration</a>
                     </li>
                   </ul>
                   <!-- /.sub-menu__notfound -->
@@ -331,18 +368,257 @@
             <li class="navbar__item">
               <a href="#" class="navbar__link">Help</a>
             </li>
-            <li class="navbar__item">
-              <a href="#" class="navbar__button">Get it now</a>
-            </li>
           </ul>
         </nav>
         <!-- /.navbar-menu -->
+        <a href="#" class="navbar__button">Get it now</a>
+
+        <button class="menu-button navbar__menu-button">
+          <span class="menu-button__line"></span>
+        </button> <!-- /.menu-button navbar__menu-button -->
+
+        <div class="mobile-menu navbar__mobile-menu">
+
+          <ul class="mobile-menu__list">
+            <button class="mobile-menu__close-button">
+              <img src="img/header/close-icon.svg" alt="Icon: close">
+            </button>
+
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Home</a>
+            </li>
+
+            <li class="mobile-menu__item">
+              <div class="mobile-menu__link-wrapper">
+                <a href="#" class="mobile-menu__link">Landings</a>
+                <div class="mobile-menu__arrow">
+                  <svg class="mobile-arrow" width="7" height="10" viewBox="0 0 7 10" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.125 5.21484C6.37109 4.96875 6.37109 4.55859 6.125 4.28516L2.40625 0.566406C2.13281 0.320312 1.72266 0.320312 1.47656 0.566406L0.847656 1.19531C0.601562 1.46875 0.601562 1.87891 0.847656 2.125L3.5 4.77734L0.847656 7.40234C0.601562 7.64844 0.601562 8.05859 0.847656 8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703 2.40625 8.93359L6.125 5.21484Z" />
+                  </svg>
+                </div>
+              </div>
+
+              <ul class="mobile-sub">
+                <li class="mobile-sub__item">
+                  <div class="mobile-sub__link-wrapper">
+                    <a href="#" class="mobile-sub__link">Services</a>
+                    <div class="mobile-sub__arrow">
+                      <svg class="mobile-arrow" width="7" height="10" viewBox="0 0 7 10"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.125 5.21484C6.37109 4.96875 6.37109 4.55859 6.125 4.28516L2.40625 0.566406C2.13281 0.320312 1.72266 0.320312 1.47656 0.566406L0.847656 1.19531C0.601562 1.46875 0.601562 1.87891 0.847656 2.125L3.5 4.77734L0.847656 7.40234C0.601562 7.64844 0.601562 8.05859 0.847656 8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703 2.40625 8.93359L6.125 5.21484Z" />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <ul class="mobile-sub-sub">
+                    <li class="mobile-sub-sub__item">
+                      <a href="#" class="mobile-sub-sub__link">Software Library</a>
+                    </li>
+                    <li class="mobile-sub-sub__item">
+                      <a href="#" class="mobile-sub-sub__link">Insurance</a>
+                    </li>
+                    <li class="mobile-sub-sub__item">
+                      <a href="#" class="mobile-sub-sub__link">Converence</a>
+                    </li>
+                    <li class="mobile-sub-sub__item">
+                      <a href="#" class="mobile-sub-sub__link">Rental</a>
+                    </li>
+                  </ul>
+
+                </li>
+
+                <li class="mobile-sub__item">
+                  <div class="mobile-sub__link-wrapper">
+                    <a href="#" class="mobile-sub__link">Products</a>
+                    <div class="mobile-sub__arrow">
+                      <svg class="mobile-arrow" width="7" height="10" viewBox="0 0 7 10"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.125 5.21484C6.37109 4.96875 6.37109 4.55859 6.125 4.28516L2.40625 0.566406C2.13281 0.320312 1.72266 0.320312 1.47656 0.566406L0.847656 1.19531C0.601562 1.46875 0.601562 1.87891 0.847656 2.125L3.5 4.77734L0.847656 7.40234C0.601562 7.64844 0.601562 8.05859 0.847656 8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703 2.40625 8.93359L6.125 5.21484Z" />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <ul class="mobile-sub-sub">
+                    <li class="mobile-sub-sub__item">
+                      <a href="#" class="mobile-sub-sub__link">Software Library</a>
+                    </li>
+                    <li class="mobile-sub-sub__item">
+                      <a href="#" class="mobile-sub-sub__link">Insurance</a>
+                    </li>
+                    <li class="mobile-sub-sub__item">
+                      <a href="#" class="mobile-sub-sub__link">Converence</a>
+                    </li>
+                    <li class="mobile-sub-sub__item">
+                      <a href="#" class="mobile-sub-sub__link">Rental</a>
+                    </li>
+                  </ul>
+
+                </li>
+              </ul>
+            </li>
+            <!-- /.mobile-sub -->
+
+            <li class="mobile-menu__item">
+              <div class="mobile-menu__link-wrapper">
+                <a href="#" class="mobile-menu__link">Pages</a>
+                <div class="mobile-menu__arrow">
+                  <svg class="mobile-arrow" width="7" height="10" viewBox="0 0 7 10" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.125 5.21484C6.37109 4.96875 6.37109 4.55859 6.125 4.28516L2.40625 0.566406C2.13281 0.320312 1.72266 0.320312 1.47656 0.566406L0.847656 1.19531C0.601562 1.46875 0.601562 1.87891 0.847656 2.125L3.5 4.77734L0.847656 7.40234C0.601562 7.64844 0.601562 8.05859 0.847656 8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703 2.40625 8.93359L6.125 5.21484Z" />
+                  </svg>
+                </div>
+              </div>
+
+              <ul class="mobile-sub-sub">
+                <li class="mobile-sub-sub__item">
+                  <a href="#" class="mobile-sub-sub__link">Software Library</a>
+                </li>
+                <li class="mobile-sub-sub__item">
+                  <a href="#" class="mobile-sub-sub__link">Insurance</a>
+                </li>
+                <li class="mobile-sub-sub__item">
+                  <a href="#" class="mobile-sub-sub__link">Converence</a>
+                </li>
+                <li class="mobile-sub-sub__item">
+                  <a href="#" class="mobile-sub-sub__link">Rental</a>
+                </li>
+              </ul>
+
+            </li>
+
+            <li class="mobile-menu__item">
+              <div class="mobile-menu__link-wrapper">
+                <a href="#" class="mobile-menu__link">Docs</a>
+                <div class="mobile-menu__arrow">
+                  <svg class="mobile-arrow" width="7" height="10" viewBox="0 0 7 10" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.125 5.21484C6.37109 4.96875 6.37109 4.55859 6.125 4.28516L2.40625 0.566406C2.13281 0.320312 1.72266 0.320312 1.47656 0.566406L0.847656 1.19531C0.601562 1.46875 0.601562 1.87891 0.847656 2.125L3.5 4.77734L0.847656 7.40234C0.601562 7.64844 0.601562 8.05859 0.847656 8.33203L1.47656 8.93359C1.72266 9.20703 2.13281 9.20703 2.40625 8.93359L6.125 5.21484Z" />
+                  </svg>
+                </div>
+              </div>
+
+
+              <ul class="mobile-sub-sub">
+                <li class="mobile-sub-sub__item">
+                  <a href="#" class="mobile-sub-sub__link">Software Library</a>
+                </li>
+                <li class="mobile-sub-sub__item">
+                  <a href="#" class="mobile-sub-sub__link">Insurance</a>
+                </li>
+                <li class="mobile-sub-sub__item">
+                  <a href="#" class="mobile-sub-sub__link">Converence</a>
+                </li>
+                <li class="mobile-sub-sub__item">
+                  <a href="#" class="mobile-sub-sub__link">Rental</a>
+                </li>
+              </ul>
+
+            </li>
+
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Help</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__button">Get it now</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.mobile-menu navbar__mobile-menu -->
+
       </div>
+      <!-- /.navbar__wrapper -->
     </div>
     <!-- /.container -->
 
   </header>
   <!-- /.navbar -->
+
+  <main class="main">
+    <div class="container">
+      <div class="main__wrapper">
+        <h1 class="main__title">Awesome & powerfull landing for your software library</h1>
+        <span class="main__subtitle">An awesome & powefull JavaScript library for building user interfaces</span>
+
+        <div class="documents main__documents">
+          <div class="documents__buttons-wrapper documents__buttons-wrapper--mb-1">
+            <a href="#" class="button documents__git-button">
+              <img src="img/main/git-icon.svg" alt="Icon: Git icon" class="documents__git-button__icon">
+              View on Github
+            </a>
+            <a href="#" class="button documents__doc-button">
+              Documentation
+              <img src="img/main/arrow-left.svg" alt="icon: Arrow left" class="documents__doc-button__arrow">
+            </a>
+          </div>
+          <span class="documents__subtitle">Zip-archive with production version, all sources and addons.</span>
+        </div>
+        <!-- /.main__buttons buttons -->
+
+        <div class="main-bottom main-bottom--mb-4">
+          <div class="main-bottom__item">
+            <div class="main-bottom__icon-wrap">
+              <img src="img/main/Icon-rocket.svg" alt="Icon: Rocket" class="main-bottom__icon">
+            </div>
+            <div class="main-bottom__text-wrap">
+              <h3 class="main-bottom__title">Super Architecture</h3>
+              <p class="main-bottom__text">
+                Modular, realiable, OOP, simple fast, for scalable client-side code.
+              </p>
+            </div>
+          </div>
+
+          <div class="main-bottom__item">
+            <div class="main-bottom__icon-wrap">
+              <img src="img/main/Icon-workflow.svg" alt="Icon: Workflow" class="main-bottom__icon">
+            </div>
+            <div class="main-bottom__text-wrap">
+              <h3 class="main-bottom__title">No Dependencies</h3>
+              <p class="main-bottom__text">
+                Independent of any third-party libraries or frameworks.
+              </p>
+            </div>
+          </div>
+
+          <div class="main-bottom__item">
+            <div class="main-bottom__icon-wrap">
+              <img src="img/main/Icon-openedfile.svg" alt="Icon: Opened File" class="main-bottom__icon">
+            </div>
+            <div class="main-bottom__text-wrap">
+              <h3 class="main-bottom__title">Well Documented</h3>
+              <p class="main-bottom__text">
+                Each component and module has descriptions and API.
+              </p>
+            </div>
+          </div>
+
+          <div class="main-bottom__item">
+            <div class="main-bottom__icon-wrap">
+              <img src="img/main/Icon-like.svg" alt="Icon: Like" class="main-bottom__icon">
+            </div>
+            <div class="main-bottom__text-wrap">
+              <h3 class="main-bottom__title">Real Life Tested</h3>
+              <p class="main-bottom__text">
+                We use it in our work. On this site too for the front and admin.
+              </p>
+            </div>
+          </div>
+          <div class="main-bottom__link-wrap">
+            <a href="#" class="main-bottom__link">
+              Explore all features
+              <img src="img/main/main-bottom-arrow.svg" alt="Icon: Arrow left" class="main-bottom__link-icon">
+            </a>
+          </div>
+        </div>
+        <!-- /.main__bottom -->
+      </div>
+      <!-- /.main__wrapper -->
+    </div>
+    <!-- /.container -->
+  </main>
+  <!-- /.main-display -->
 
 
   <script src="js/jquery-3.5.1.min.js"></script>

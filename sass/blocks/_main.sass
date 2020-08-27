@@ -1,0 +1,123 @@
+.main
+  position: relative
+  padding: 96px 0 0
+  background-image: url(../img/main/main-bg.jpg)
+  background-repeat: no-repeat
+  background-position: center -180px
+  background-size: cover
+  color: $light-color
+  &__wrapper
+    text-align: center
+  &__title
+    margin: 0 0 24px
+    font-family: 'HK Grotesk', sans-serif
+    font-style: normal
+    font-weight: 700
+    font-size: 56px
+    line-height: 68px
+    letter-spacing: 0.2px
+  &__subtitle
+    display: inline-block
+    margin-bottom: 40px
+    font-style: normal
+    font-weight: 400
+    font-size: 20px
+    line-height: 36px
+  &__documents
+    margin-bottom: 100px
+  &-bottom
+    display: grid
+    grid-template-rows: repeat(2, 162px)
+    grid-template-columns: repeat(2, minmax(288px, 466px))
+    grid-gap: 16px
+    justify-content: center
+    &__title
+      margin: 0 0 4px
+      font-family: 'HK Grotesk', sans-serif
+      font-style: normal
+      font-weight: 700
+      font-size: 22px
+      line-height: 33px
+      color: $text-color-dark
+    &__text-wrap
+      margin-left: 24px
+      text-align: start
+    &__text
+      margin: 0
+      font-style: normal
+      font-weight: 400
+      font-size: 18px
+      line-height: 32px
+      color: $text-color-light
+    &__item
+      display: flex
+      justify-content: space-between
+      padding: 32px
+      background-color: $light-color
+      box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.05)
+      border-radius: 16px
+    &__icon-wrap
+      max-width: 40px
+      height: 40px
+    &__icon
+      width: 40px
+    &__link-wrap
+      grid-column: span 2
+      margin-right: 35px
+    &__link
+      position: relative
+      font-style: normal
+      font-weight: 700
+      font-size: 18px
+      line-height: 25px
+      color: $primary-color
+      text-decoration: none
+      cursor: pointer
+      &:focus
+        outline: none
+      &-icon
+        position: absolute
+        top: 8px
+        right: -20px
+.button
+  position: relative
+.documents
+  &__buttons-wrapper
+    display: flex
+    justify-content: space-between
+    margin: 0 auto
+    width: 464px
+    &--mb-1
+      margin-bottom: 16px
+  &__git-button
+    padding: 16px 26px 16px 56px
+    width: 223px
+    font-style: normal
+    font-weight: 700
+    font-size: 18px
+    line-height: 25px
+    text-decoration: none
+    background-color: $light-color
+    &__icon
+      position: absolute
+      top: 20px
+      left: 31px
+      width: 16px
+      height: 18px
+  &__doc-button
+    padding: 16px 58px 16px 25px
+    width: 225px
+    text-decoration: none
+    background-color: $primary-color
+    color: $light-color
+    border: 2px solid $light-color
+    &__arrow
+      position: absolute
+      top: 20px
+      right: 31px
+      width: 14px
+      height: 18px
+.doc-arrow
+  fill: red
+  width: 14px
+  height: 18px
