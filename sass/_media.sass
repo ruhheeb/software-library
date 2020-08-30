@@ -5,12 +5,34 @@
 @media (max-width: 992px)
   .container
     max-width: 700px
-
+  // block main
+  .main
+    background-image: url(../img/main/main-bg-992.jpg)
+    background-position: center -260px
+    &__title
+      font-size: 48px
+      line-height: 60px
+    &__documents
+      margin-bottom: 130px
+    &-bottom
+      grid-template-rows: 226px 258px
+      grid-template-columns: repeat(2, minmax(288px, 466px))
+      &__item
+        flex-wrap: wrap
+        &--pb-6
+          padding-bottom: 64px
+      &__text-wrap
+        margin: 24px 0 0
 @media (max-width: 768px)
   .container
-    max-width: 630px
+    max-width: 700px
     width: 92%
   .navbar
+    &__wrapper
+      padding: 0 33px
+    &__logo-wrapper
+      width: 77px
+      height: 24px
     &-menu, &__button
       display: none
     &--mobile
@@ -67,3 +89,100 @@
         background-color: $light-color
         transform: translateY(7px)
         transition: all 0.5s
+  // block main
+  .main
+    padding: 180px 0 0
+    &__documents
+      margin-bottom: 80px
+    &-bottom
+      &__link
+        display: none
+@media (max-width: 760px)
+  .container
+    width: 92%
+  // block main
+  .main
+    background-position: center -700px
+    background-size: cover
+    &-bottom
+      grid-template-rows: repeat(4, 226px)
+      grid-template-columns: 466px
+      grid-column-gap: 0
+      &__item
+        justify-content: center
+      &__text-wrap
+        text-align: center
+      &__architecture
+        grid-row: 1 / 2
+      &__workflow
+        grid-row: 2 / 3
+      &__documented
+        grid-row: 3 / 4
+      &__tested
+        grid-row: 4 / 5
+@media (max-width: 576px)
+  .container
+    width: 92%
+  // block main
+  .main
+    &__wrapper
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__title
+      margin-bottom: 48px
+      font-size: 32px
+      line-height: 40px
+    &__subtitle
+      margin-bottom: 40px
+      font-size: 16px
+      line-height: 28px
+    &-bottom
+      grid-template-rows: 244px repeat(3, 216px)
+      grid-template-columns: 288px
+      &__item
+        padding: 32px 24px
+      &__text-wrap
+        margin: 23px 0
+      &__title
+        font-size: 20px
+        line-height: 24px
+      &__text
+        font-size: 16px
+        line-height: 28px
+  .documents
+    display: flex
+    flex-direction: column
+    align-content: center
+    &__buttons-wrapper
+      flex-direction: column
+      width: 207px
+    &__git-button
+      margin-bottom: 12px
+      padding: 13px 20px 13px 40px
+      width: 207px
+      font-size: 16px
+      line-height: 22px
+      &__icon
+        top: 17px
+        left: 29px
+        width: 14px
+        height: 16px
+    &__doc-button
+      padding: 13px 63px 13px 24px
+      width: 207px
+      width: 207px
+      font-size: 16px
+      line-height: 22px
+      &__arrow
+        top: 17px
+        right: 28px
+        width: 13px
+        height: 18px
+    &__link
+      font-size: 14px
+      line-height: 24px
+@media (max-width: 440px)
+  .documents
+    &__link
+      text-align: start

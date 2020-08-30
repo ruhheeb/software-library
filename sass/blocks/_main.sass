@@ -60,7 +60,7 @@
       max-width: 40px
       height: 40px
     &__icon
-      width: 40px
+      max-width: 40px
     &__link-wrap
       grid-column: span 2
       margin-right: 35px
@@ -98,6 +98,7 @@
     line-height: 25px
     text-decoration: none
     background-color: $light-color
+    color: $primary-color
     &__icon
       position: absolute
       top: 20px
@@ -117,6 +118,16 @@
       right: 31px
       width: 14px
       height: 18px
+  &__link
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    text-decoration: none
+    color: $light-color
+    opacity: 0.5
+    &:focus
+      outline: none
 .doc-arrow
   fill: red
   width: 14px

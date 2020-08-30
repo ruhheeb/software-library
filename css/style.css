@@ -567,6 +567,7 @@ img {
   margin: 0;
   padding: 38px 34px 26px 32px;
   width: 260px;
+  z-index: 77;
 }
 
 .sub-menu__pages {
@@ -576,6 +577,7 @@ img {
   margin: 0;
   padding: 38px 34px 26px 32px;
   width: 260px;
+  z-index: 79;
 }
 
 .sub-icon {
@@ -905,7 +907,7 @@ img {
 }
 
 .main-bottom__icon {
-  width: 40px;
+  max-width: 40px;
 }
 
 .main-bottom__link-wrap {
@@ -958,6 +960,7 @@ img {
   line-height: 25px;
   text-decoration: none;
   background-color: #FFFFFF;
+  color: #1565D8;
 }
 
 .documents__git-button__icon {
@@ -985,6 +988,20 @@ img {
   height: 18px;
 }
 
+.documents__link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.documents__link:focus {
+  outline: none;
+}
+
 .doc-arrow {
   fill: red;
   width: 14px;
@@ -1001,12 +1018,43 @@ img {
   .container {
     max-width: 700px;
   }
+  .main {
+    background-image: url(../img/main/main-bg-992.jpg);
+    background-position: center -260px;
+  }
+  .main__title {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .main__documents {
+    margin-bottom: 130px;
+  }
+  .main-bottom {
+    grid-template-rows: 226px 258px;
+    grid-template-columns: repeat(2, minmax(288px, 466px));
+  }
+  .main-bottom__item {
+    flex-wrap: wrap;
+  }
+  .main-bottom__item--pb-6 {
+    padding-bottom: 64px;
+  }
+  .main-bottom__text-wrap {
+    margin: 24px 0 0;
+  }
 }
 
 @media (max-width: 768px) {
   .container {
-    max-width: 630px;
+    max-width: 700px;
     width: 92%;
+  }
+  .navbar__wrapper {
+    padding: 0 33px;
+  }
+  .navbar__logo-wrapper {
+    width: 77px;
+    height: 24px;
   }
   .navbar-menu, .navbar__button {
     display: none;
@@ -1072,6 +1120,132 @@ img {
     background-color: #FFFFFF;
     transform: translateY(7px);
     transition: all 0.5s;
+  }
+  .main {
+    padding: 180px 0 0;
+  }
+  .main__documents {
+    margin-bottom: 80px;
+  }
+  .main-bottom__link {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .container {
+    width: 92%;
+  }
+  .main {
+    background-position: center -700px;
+    background-size: cover;
+  }
+  .main-bottom {
+    grid-template-rows: repeat(4, 226px);
+    grid-template-columns: 466px;
+    grid-column-gap: 0;
+  }
+  .main-bottom__item {
+    justify-content: center;
+  }
+  .main-bottom__text-wrap {
+    text-align: center;
+  }
+  .main-bottom__architecture {
+    grid-row: 1 / 2;
+  }
+  .main-bottom__workflow {
+    grid-row: 2 / 3;
+  }
+  .main-bottom__documented {
+    grid-row: 3 / 4;
+  }
+  .main-bottom__tested {
+    grid-row: 4 / 5;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 92%;
+  }
+  .main__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main__title {
+    margin-bottom: 48px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .main__subtitle {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .main-bottom {
+    grid-template-rows: 244px repeat(3, 216px);
+    grid-template-columns: 288px;
+  }
+  .main-bottom__item {
+    padding: 32px 24px;
+  }
+  .main-bottom__text-wrap {
+    margin: 23px 0;
+  }
+  .main-bottom__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .main-bottom__text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .documents {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .documents__buttons-wrapper {
+    flex-direction: column;
+    width: 207px;
+  }
+  .documents__git-button {
+    margin-bottom: 12px;
+    padding: 13px 20px 13px 40px;
+    width: 207px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .documents__git-button__icon {
+    top: 17px;
+    left: 29px;
+    width: 14px;
+    height: 16px;
+  }
+  .documents__doc-button {
+    padding: 13px 63px 13px 24px;
+    width: 207px;
+    width: 207px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .documents__doc-button__arrow {
+    top: 17px;
+    right: 28px;
+    width: 13px;
+    height: 18px;
+  }
+  .documents__link {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 440px) {
+  .documents__link {
+    text-align: start;
   }
 }
 /*# sourceMappingURL=style.css.map */
