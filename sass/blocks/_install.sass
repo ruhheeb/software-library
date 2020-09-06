@@ -1,0 +1,112 @@
+.install
+  padding: 160px 0 96px
+  text-align: center
+  background-color: $light-color
+  &__wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__uptitle
+    margin-bottom: 16px
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    letter-spacing: 2px
+    text-transform: uppercase
+    color: $subtitle-color
+  &__title
+    margin: 0 0 16px
+    font-family: 'HK Grotesk', sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 48px
+    letter-spacing: 0.2px
+  &__text
+    margin: 0 0 64px
+    max-width: 760px
+    font-style: normal
+    font-weight: normal
+    line-height: 32px
+    color: $text-color-light
+  &__tabs-wrapper
+    margin-bottom: 24px
+  &__tabs-item
+  &__tabs-content
+    display: none
+    &--active
+      display: block
+// tabs
+.tabs
+  &__wrapper
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 32px
+    width: 612px
+    height: 160px
+    background-color: $install-bg-color
+    border-radius: 16px
+  &__trigger
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 0
+    padding: 0
+    max-width: 612px
+    list-style: none
+  &__item
+    margin-right: 12px
+    padding: 7px 16px
+    height: 40px
+    font-style: normal
+    font-weight: 600
+    line-height: 25px
+    text-align: center
+    background-color: #1C2A37
+    border-radius: 6px
+    color: $text-color-light
+    cursor: pointer
+    &:last-child
+      margin-right: 0
+  &-content
+    text-align: start
+    &__command
+      font-family: 'SFMono', sans-serif
+      color: $light-color
+      text-decoration: none
+      font-size: 16px
+      line-height: 20px
+      &:focus
+        outline: none
+    &__code
+      &:first-child
+        color: $text-color-light
+      &:last-child
+        color: $command-color
+  &-tags
+    display: flex
+    &__item
+      display: flex
+      margin-right: 32px
+    &__icon-bg
+      position: relative
+      margin-right: 12px
+      width: 24px
+      height: 24px
+      background-color: rgba(54,179,126,0.15)
+      border-radius: 50%
+    &__icon-wrap
+      position: absolute
+      top: -5%
+      left: 50%
+      transform: translateX(-50%)
+      width: 10px
+      height: 8px
+    &__tag
+      font-style: normal
+      font-weight: 400
+      font-size: 16px
+      line-height: 22px
+      color: $text-color-dark

@@ -61,6 +61,20 @@ $(document).ready(function () {
   });
 
 
+  // install tabs
+  var tabsItem = $(".install__tabs-item");
+  var contentItem = $(".install__tabs-content");
+
+  tabsItem.on("click", function (event) {
+    var activeContent = $(this).attr("data-target");
+
+    tabsItem.removeClass("install__tabs-item--active")
+    contentItem.removeClass("install__tabs-content--active");
+    $(activeContent).addClass("install__tabs-content--active");
+    $(this).addClass("install__tabs-item--active");
+  });
+
+
   // var tabsItem = $(".trend-tabs__item");
   // var contentItem = $('.trend-tabs__content');
 
@@ -71,7 +85,5 @@ $(document).ready(function () {
   //   $(activeContent).addClass("trend-tabs__content--active");
   //   $(this).addClass("trend-tabs__item--active");
   // });
-
-
 
 });
