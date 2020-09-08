@@ -1,7 +1,6 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
-
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -23,6 +22,27 @@
           padding-bottom: 64px
       &__text-wrap
         margin: 24px 0 0
+  // block statistics
+  .statistics
+    &__title
+      font-size: 32px
+      line-height: 40px
+    &__text
+      width: 640px
+  .counter
+    height: 968px
+    &__wrapper
+      flex-direction: column
+      align-items: center
+    &__item
+      padding: 39px 0 38px
+      width: 100%
+      border-right: none
+      border-bottom: 1px solid $border-color
+      &:last-child
+        border-bottom: none
+    &__tag
+      line-height: 43px
 @media (max-width: 768px)
   .container
     max-width: 700px
@@ -132,6 +152,10 @@
         grid-row: 3 / 4
       &__tested
         grid-row: 4 / 5
+  // block statistics
+  .statistics
+    &__text
+      width: 100%
 @media (max-width: 576px)
   .container
     width: 92%

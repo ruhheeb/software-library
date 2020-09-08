@@ -1013,9 +1013,9 @@ img {
 }
 
 .install {
-  padding: 160px 0 96px;
+  padding: 160px 0 280px;
   text-align: center;
-  background-color: #FFFFFF;
+  background: #FFFFFF url(../img/install/install-bg-bottom.jpg) bottom no-repeat;
 }
 
 .install__wrapper {
@@ -1164,6 +1164,80 @@ img {
   color: #183B56;
 }
 
+.statistics {
+  padding: 20px 0 60px;
+  background: linear-gradient(180deg, #F8FBFF 0%, rgba(250, 251, 251, 0.0001) 100%);
+  text-align: center;
+}
+
+.statistics__title {
+  margin: 0 0 16px;
+  font-family: 'HK Grotesk', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #183B56;
+}
+
+.statistics__text {
+  margin: 0 auto 64px;
+  width: 750px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.counter {
+  height: 258px;
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03);
+  border-radius: 8px 8px 16px 16px;
+  overflow: hidden;
+}
+
+.counter__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  border-top: 4px solid #1565D8;
+}
+
+.counter__item {
+  position: relative;
+  padding: 48px 20px 45px;
+  width: 277px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #E5EAF4;
+}
+
+.counter__item:last-child {
+  border-right: none;
+}
+
+.counter__image-wrap {
+  margin-bottom: 32px;
+}
+
+.counter__tag {
+  font-family: 'HK Grotesk', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #183B56;
+}
+
+.counter__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1197,6 +1271,32 @@ img {
   }
   .main-bottom__text-wrap {
     margin: 24px 0 0;
+  }
+  .statistics__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .statistics__text {
+    width: 640px;
+  }
+  .counter {
+    height: 968px;
+  }
+  .counter__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .counter__item {
+    padding: 39px 0 38px;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #E5EAF4;
+  }
+  .counter__item:last-child {
+    border-bottom: none;
+  }
+  .counter__tag {
+    line-height: 43px;
   }
 }
 
@@ -1328,6 +1428,9 @@ img {
   }
   .main-bottom__tested {
     grid-row: 4 / 5;
+  }
+  .statistics__text {
+    width: 100%;
   }
 }
 
