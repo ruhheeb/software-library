@@ -1,6 +1,11 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
+  // block features
+  .cards
+    grid-template-rows: repeat(3, 317px)
+    grid-template-columns: repeat(2, minmax(288px, 360px))
+    justify-content: center
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -43,6 +48,24 @@
         border-bottom: none
     &__tag
       line-height: 43px
+  // block features
+  .features
+    &__uptitle
+      margin-bottom: 20px
+    &__title
+      margin-bottom: 20px
+      font-size: 32px
+      line-height: 40px
+    &__text
+      width: 640px
+  .cards
+    grid-template-rows: repeat(6, 282px)
+    grid-template-columns: repeat(1, minmax(288px, 672px))
+    &__item
+      display: flex
+      flex-direction: column
+      align-items: center
+      text-align: center
 @media (max-width: 768px)
   .container
     max-width: 700px
@@ -156,6 +179,10 @@
   .statistics
     &__text
       width: 100%
+  // block features
+  .features
+    &__text
+      width: 100%
 @media (max-width: 576px)
   .container
     width: 92%
@@ -218,6 +245,31 @@
     &__link
       font-size: 14px
       line-height: 24px
+  // block features
+  .features
+    &__title
+      margin-bottom: 16px
+      font-size: 28px
+      line-height: 36px
+    &__text
+      margin-bottom: 40px
+      font-size: 16px
+      line-height: 28px
+  .cards
+    grid-template-rows: repeat(6, 286px)
+    &__item
+      padding: 35px 24px 32px
+    &__title
+      margin-bottom: 11px
+      font-size: 20px
+      line-height: 24px
+    &__text
+      margin-bottom: 20px
+      font-size: 16px
+      line-height: 28px
+    &__link
+      font-size: 16px
+      line-height: 22px
 @media (max-width: 440px)
   .documents
     &__link

@@ -1,0 +1,71 @@
+.features
+  padding: 40px 0
+  background-color: $light-color
+  text-align: center
+  &__uptitle
+    display: inline-block
+    margin-bottom: 16px
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    letter-spacing: 2px
+    color: $subtitle-color
+  &__title
+    margin: 0 0 16px
+    font-family: 'HK Grotesk', sans-serif
+    font-style: normal
+    font-weight: 700
+    font-size: 36px
+    line-height: 48px
+    letter-spacing: 0.2px
+    color: $text-color-dark
+  &__text
+    margin: 0 auto 64px
+    width: 750px
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 32px
+    color: $text-color-light
+.cards
+  display: grid
+  grid-template-rows: repeat(2, 317px)
+  grid-template-columns: repeat(3, minmax(288px, 360px))
+  grid-gap: 30px
+  text-align: start
+  &__item
+    padding: 36px 32px 37px
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.02)
+    border: 1px solid $border-color
+    border-radius: 16px
+  &__image-wrap
+    margin-bottom: 25px
+    width: 40px
+    height: 40px
+  &__title
+    margin: 0 0 8px
+    font-family: 'HK Grotesk', sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 22px
+    line-height: 32px
+    letter-spacing: 0.2px
+    color: $text-color-dark
+  &__text
+    margin: 0 0 23px
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 32px
+    color: $text-color-light
+  &__link
+    font-style: normal
+    font-weight: 700
+    font-size: 18px
+    line-height: 25px
+    text-decoration: none
+    color: $primary-color
+    cursor: pointer
+    &:focus
+      outline: none
