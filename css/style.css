@@ -1333,6 +1333,93 @@ img {
   outline: none;
 }
 
+.sponsors {
+  margin: 0 auto;
+  padding: 60px 0;
+  max-width: 898px;
+}
+
+.sponsors__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sponsors__title {
+  margin: 0 0 44px;
+  font-family: 'HK Grotesk', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.2px;
+  color: #183B56;
+}
+
+.sponsors__button {
+  padding: 12px 24px;
+  max-width: 133px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+  color: #1565D8;
+  border: 2px solid #1565D8;
+  border-radius: 2000px;
+  cursor: pointer;
+}
+
+.sponsors__button:focus {
+  outline: none;
+}
+
+.sponsor {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 494px;
+}
+
+.sponsor__item {
+  border-radius: 50%;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.sponsor__item--first {
+  width: 140px;
+  height: 140px;
+}
+
+.sponsor__item--second {
+  margin-top: 47px;
+  width: 120px;
+  height: 120px;
+}
+
+.sponsor__item--third {
+  margin-top: 20px;
+  width: 140px;
+  height: 140px;
+}
+
+.sponsor__item--fourth {
+  margin: 47px 0 0 100px;
+  width: 120px;
+  height: 120px;
+}
+
+.sponsor__item--fifth {
+  margin: 25px 97px 0 0;
+  width: 140px;
+  height: 140px;
+}
+
+.sponsor__image {
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1418,6 +1505,19 @@ img {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+  .sponsors__wrapper {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 494px;
+  }
+  .sponsors__head {
+    text-align: center;
+  }
+  .sponsors__title {
+    margin-bottom: 38px;
+    font-size: 32px;
+    line-height: 40px;
   }
 }
 
@@ -1663,6 +1763,39 @@ img {
   .cards__link {
     font-size: 16px;
     line-height: 22px;
+  }
+  .sponsors__wrapper {
+    height: 651px;
+  }
+  .sponsors__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .sponsor {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 284px;
+  }
+  .sponsor__wrapper {
+    width: 92%;
+  }
+  .sponsor__item--first {
+    margin-top: -20px;
+    order: 1;
+  }
+  .sponsor__item--second {
+    margin: 0;
+    order: -1;
+    margin-left: 90px;
+  }
+  .sponsor__item--fourth {
+    margin: 0;
+    order: -1;
+  }
+  .sponsor__item--fifth {
+    margin: 0;
+    margin-top: 40px;
+    order: 3;
   }
 }
 
