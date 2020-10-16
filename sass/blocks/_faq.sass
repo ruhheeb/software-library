@@ -1,0 +1,114 @@
+.faq
+  padding: 260px 0 100px
+  background-image: url(../img/faq/faq-bg.jpg)
+  background-position: top
+  background-repeat: no-repeat
+  background-size: cover
+  &__wrapper
+    display: flex
+    justify-content: space-between
+  &__uptitle
+    display: inline-block
+    margin-bottom: 16px
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    letter-spacing: 2px
+    text-transform: uppercase
+    color: $subtitle-color
+  &__title
+    margin: 0 0 16px
+    width: 433px
+    font-family: 'HK Grotesk', sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 48px
+    letter-spacing: 0.2px
+    color: $light-color
+  &__text
+    margin: 0 0 32px
+    width: 507px
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 32px
+    color: $text-color-light
+  &-info
+    &__item
+      display: flex
+      margin-bottom: 23px
+      width: 457px
+    &__title
+      margin: 0 0 8px
+      font-style: normal
+      font-weight: 700
+      font-size: 16px
+      line-height: 22px
+      color: $faq-info-color
+    &__text
+      margin: 0
+      font-style: normal
+      font-weight: 400
+      font-size: 16px
+      line-height: 28px
+      color: $text-color-light
+    &__icon-wrap
+      display: flex
+      flex-direction: column
+      justify-content: space-evenly
+      align-items: center
+      margin-right: 16px
+      min-width: 24px
+      height: 24px
+      border-radius: 50%
+      background-color: $subtitle-color
+  &__questions-sub
+    display: none
+    &--active
+      display: block
+
+.questions
+  width: 520px
+  &-menu
+    margin: 0
+    padding: 36px 32px 28px
+    width: 100%
+    list-style: none
+    background-color: $light-color
+    border-top: 3px solid $subtitle-color
+    border-radius: 8px 8px 16px 16px
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03)
+    &__item
+      position: relative
+      padding: 26px 0 28px
+      border-bottom: 1px solid $border-color
+      &:first-child
+        padding-top: 0
+      &:last-child
+        padding-bottom: 0
+        border-bottom: 0
+    &__link
+      display: flex
+      justify-content: space-between
+      align-items: center
+      font-style: normal
+      font-weight: 600
+      font-size: 18px
+      line-height: 25px
+      text-decoration: none
+      color: $text-color-dark
+    &__icon
+      with: 11px
+      height: 14px
+  &-sub
+    list-style: none
+    margin: 0
+    padding: 12px 0 0
+    &__text
+      margin: 0
+      font-style: normal
+      font-weight: 400
+      font-size: 16px
+      line-height: 28px
