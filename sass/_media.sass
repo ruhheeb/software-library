@@ -66,6 +66,7 @@
       flex-direction: column
       align-items: center
       text-align: center
+
   // block sponsors
   .sponsors
     &__wrapper
@@ -78,6 +79,52 @@
       margin-bottom: 38px
       font-size: 32px
       line-height: 40px
+
+  // faq block
+  .faq
+    &__wrapper
+      flex-direction: column
+    &__head
+      text-align: center
+    &__title
+      margin: 0 auto 16px
+    &__text
+      margin: 0 auto 32px
+    &-info
+      display: flex
+  .questions
+    width: 100%
+
+  // reviews block
+  .reviews
+    &-slider
+      &__container
+        width: 640px
+
+  // updates block
+  .updates
+    background-image: url(../img/updates/bg-image-992.jpg)
+    &__wrapper
+      flex-direction: column
+    &__title
+      text-align: center
+    &__button-wrap
+      width: 420px
+
+  // footer block
+  .footer
+    &__wrapper
+      grid-template-rows: repeat(2, 262px) 102px
+      grid-template-columns: 253px repeat(2, minmax(113px, 165px))
+      grid-row-gap: 29px
+    &__company
+      grid-column: 2 / 3
+      grid-row: 2 / 3
+    &__more
+      grid-row: 2 / 3
+      grid-column: 3 / 4
+    &-bottom
+      grid-row: 4 / 5
 @media (max-width: 768px)
   .container
     max-width: 700px
@@ -102,6 +149,7 @@
         display: block
       &--hidden
         display: none
+
   // Menu Button
   .menu-button
     position: relative
@@ -159,10 +207,36 @@
       font-size: 32px
       line-height: 40px
     &__text
-      width: 640px
+      width: 550px
+
   .tabs
     &__wrapper
-      overflow-x: hidden
+      width: 550px
+
+  // block reviewa
+  .reviews
+    &-slider
+      &__container
+        width: 550px
+
+  // block footer
+  .footer
+    &__wrapper
+      grid-template-rows: repeat(2, 262px)
+      grid-template-columns: repeat(2, minmax(113px, 165px))
+    &__head
+      grid-row: 4 / 5
+      grid-column: span 2
+      display: flex
+      flex-direction: column
+      align-items: center
+      text-align: center
+    &__company
+      grid-column: 1 / 2
+    &__more
+      grid-column: 2 / 3
+    &-bottom
+      display: none
 
 @media (max-width: 760px)
   .container
@@ -195,6 +269,14 @@
   .features
     &__text
       width: 100%
+
+@media (min-width: 576px)
+  // updates block
+  .updates
+    &__button
+      &--mobile
+        display: none
+
 @media (max-width: 576px)
   .container
     width: 92%
@@ -257,6 +339,31 @@
     &__link
       font-size: 14px
       line-height: 24px
+
+  // install block
+  .install
+    &__text
+      width: 85%
+  .tabs
+    &__wrapper
+      padding: 24px
+      width: 440px
+      height: 124px
+    &-tags
+      flex-direction: column
+      align-items: center
+      &__item
+        margin-bottom: 16px
+    &__item
+      padding: 6px 12px
+      margin-right: 8px
+      height: 32px
+      font-size: 14px
+      line-height: 20px
+    &-content
+      &__command
+        font-size: 14px
+        line-height: 20px
   // block features
   .features
     &__title
@@ -310,7 +417,101 @@
         margin: 0
         margin-top: 40px
         order: 3
+  // reviews block
+  .reviews
+    &-slider
+      &__container
+        padding: 40px 0 0
+        width: 92%
+      &__item
+        &::before
+          top: -35px
+      &__text
+        font-size: 28px
+        line-height: 44px
+        letter-spacing: 1px
+
+  // faq block
+  .faq
+    &__title
+      width: 90%
+    &__text
+      width: 86%
+    &-info
+      flex-direction: column
+      &__item
+        width: 100%
+
+  // updates block
+  .updates
+    &__title
+      width: 372px
+    &__button-wrap
+      flex-direction: column
+      width: 207px
+    &__git-button
+      display: inline-block
+      padding: 13px 30px 13px 55px
+      width: 100%
+      font-size: 16px
+      line-height: 22px
+      &::before
+        top: 15px
+        left: 30px
+    &__button
+      width: 100%
+      font-size: 16px
+      line-height: 22px
+      &--mobile
+        &-hidden
+          display: none
 @media (max-width: 440px)
+  // main block
   .documents
     &__link
       text-align: start
+
+  // install block
+  .tabs
+    &__wrapper
+      width: 320px
+
+  // faq block
+  .faq
+    &__title
+      font-size: 28px
+      line-height: 36px
+    &__text
+      font-size: 16px
+      line-height: 28px
+
+  .questions-menu
+    &__link
+      font-size: 16px
+      line-height: 22px
+  .questions-sub
+    &__text
+      font-size: 14px
+      line-height: 24px
+  // reviews block
+  .reviews
+    &-slider
+      &__container
+        width: 92%
+
+  // updates block
+  .updates__title
+    width: 92%
+    font-size: 28px
+    line-height: 36px
+  // footer block
+  .footer
+    &__title
+      font-size: 16px
+      line-height: 22px
+    &__link
+      font-size: 14px
+      line-height: 20px
+    &__text
+      font-size: 14px
+      line-height: 24px
